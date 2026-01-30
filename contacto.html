@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <meta name="description" content="Contacta con el equipo de Mostbet Casino. Información de contacto, formulario de consultas y preguntas frecuentes sobre nuestro portal informativo.">
+    <link rel="canonical" href="https://mostbet-casino.it.com/contacto" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <meta name="robots" content="index, follow">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Contacto">
+    <meta property="og:description" content="Formulario de contacto y preguntas frecuentes sobre nuestro portal informativo de Mostbet Casino.">
+    <meta property="og:url" content="https://mostbet-casino.it.com/contacto">
+    <meta property="og:site_name" content="Mostbet">
+    <meta property="og:image" content="https://mostbet-casino.it.com/images/contacto.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <style>
+        /* Reset & Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #FFFFFF;
+            background-color: #0B3A66;
+            background-image: linear-gradient(#0F4E8A 0%, #0B3A66 100%);
+            min-height: 100vh;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: none;
+            background-color: #F5B400;
+            color: #0B3A66;
+        }
+        .btn:hover {
+            background-color: #FFC832;
+            transform: translateY(-2px);
+        }
+        .btn-secondary {
+            background-color: #1E90FF;
+            color: white;
+        }
+        .btn-secondary:hover {
+            background-color: #3AA0FF;
+        }
+        .section {
+            padding: 60px 0;
+        }
+        h1, h2, h3, h4 {
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            color: #FFFFFF;
+        }
+        h1 {
+            font-size: 2.2rem;
+            border-bottom: 2px solid #F5B400;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+        }
+        h2 {
+            font-size: 1.8rem;
+            color: #F5B400;
+            margin-top: 40px;
+            padding-bottom: 10px;
+        }
+        h3 {
+            font-size: 1.4rem;
+            color: #1E90FF;
+            margin-top: 30px;
+        }
+        h4 {
+            font-size: 1.2rem;
+            color: #A0C8FF;
+            margin-top: 25px;
+        }
+        p, li {
+            color: #E0E0E0;
+            margin-bottom: 1rem;
+        }
+        ul, ol {
+            padding-left: 25px;
+            margin-bottom: 1.5rem;
+        }
+        ul li, ol li {
+            margin-bottom: 0.5rem;
+        }
+        .text-center {
+            text-align: center;
+        }
+        .text-highlight {
+            color: #F5B400;
+            font-weight: bold;
+        }
+        
+        /* Navigation */
+        .main-nav {
+            background-color: #0B3A66;
+            padding: 15px 0;
+            border-bottom: 1px solid #0F4E8A;
+        }
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #F5B400;
+        }
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+        .nav-links a {
+            color: rgba(255, 255, 255, 0.85);
+            transition: color 0.3s;
+        }
+        .nav-links a:hover {
+            color: #F5B400;
+        }
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: #FFF;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        
+        /* Contact Content */
+        .contact-content {
+            background-color: rgba(15, 78, 138, 0.2);
+            border-radius: 10px;
+            padding: 40px;
+            margin-bottom: 40px;
+            border: 1px solid #0F4E8A;
+        }
+        .info-box {
+            background-color: rgba(30, 144, 255, 0.15);
+            border-left: 4px solid #1E90FF;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 5px;
+        }
+        .warning-box {
+            background-color: rgba(255, 100, 100, 0.15);
+            border-left: 4px solid #FF6464;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 5px;
+        }
+        
+        /* Contact Grid */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        .contact-card {
+            background-color: rgba(11, 58, 102, 0.5);
+            border-radius: 10px;
+            padding: 25px;
+            border: 1px solid #0F4E8A;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .contact-card:hover {
+            transform: translateY(-5px);
+        }
+        .contact-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            display: block;
+            color: #F5B400;
+        }
+        
+        /* Form Styles */
+        .contact-form {
+            margin-top: 40px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-label {
+            display: block;
+            margin-bottom: 8px;
+            color: #FFFFFF;
+            font-weight: bold;
+        }
+        .form-control {
+            width: 100%;
+            padding: 12px 15px;
+            background-color: rgba(11, 58, 102, 0.7);
+            border: 1px solid #0F4E8A;
+            border-radius: 5px;
+            color: #FFFFFF;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+        .form-control:focus {
+            outline: none;
+            border-color: #F5B400;
+        }
+        textarea.form-control {
+            min-height: 150px;
+            resize: vertical;
+        }
+        .form-check {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+        .form-check-input {
+            margin-right: 10px;
+            margin-top: 5px;
+        }
+        .form-check-label {
+            color: #E0E0E0;
+            font-size: 0.9rem;
+        }
+        .form-check-label a {
+            color: #F5B400;
+            text-decoration: underline;
+        }
+        .form-message {
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            display: none;
+        }
+        .form-success {
+            background-color: rgba(46, 204, 113, 0.15);
+            border-left: 4px solid #2ECC71;
+            color: #FFFFFF;
+        }
+        .form-error {
+            background-color: rgba(255, 100, 100, 0.15);
+            border-left: 4px solid #FF6464;
+            color: #FFFFFF;
+        }
+        
+        /* FAQ Section */
+        .faq-section {
+            margin-top: 50px;
+        }
+        .faq-item {
+            border-bottom: 1px solid rgba(15, 78, 138, 0.5);
+            padding: 20px 0;
+        }
+        .faq-question {
+            color: #FFFFFF;
+            font-weight: bold;
+            cursor: pointer;
+            position: relative;
+            padding-right: 30px;
+        }
+        .faq-question::after {
+            content: '+';
+            position: absolute;
+            right: 0;
+            top: 0;
+            font-size: 1.5rem;
+            color: #F5B400;
+        }
+        .faq-answer {
+            color: #E0E0E0;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        
+        /* Footer */
+        .main-footer {
+            background-color: #0B3A66;
+            border-top: 1px solid #0F4E8A;
+            padding: 40px 0 20px;
+        }
+        .footer-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        .footer-links h4 {
+            color: #F5B400;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+        .footer-links ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        .footer-links a {
+            color: #E0E0E0;
+            transition: color 0.3s;
+        }
+        .footer-links a:hover {
+            color: #F5B400;
+        }
+        .footer-badges {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 30px 0;
+        }
+        .footer-badge {
+            height: 40px;
+            width: auto;
+            filter: grayscale(20%);
+            opacity: 0.9;
+            transition: opacity 0.3s;
+        }
+        .footer-badge:hover {
+            opacity: 1;
+        }
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #0F4E8A;
+            color: #A0C8FF;
+            font-size: 0.9rem;
+        }
+        
+        /* Responsive */
+        @media (max-width: 992px) {
+            h1 { font-size: 2rem; }
+            h2 { font-size: 1.6rem; }
+            h3 { font-size: 1.3rem; }
+            .section {
+                padding: 40px 0;
+            }
+            .contact-content {
+                padding: 30px;
+            }
+            .contact-grid {
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            }
+        }
+        @media (max-width: 768px) {
+            .mobile-menu-btn {
+                display: block;
+            }
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                right: 0;
+                background-color: #0B3A66;
+                flex-direction: column;
+                padding: 20px;
+                text-align: center;
+                border-bottom: 1px solid #0F4E8A;
+                z-index: 1000;
+            }
+            .nav-links.active {
+                display: flex;
+            }
+            .contact-content {
+                padding: 20px;
+            }
+            .footer-links {
+                grid-template-columns: 1fr;
+            }
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        @media (max-width: 480px) {
+            h1 { font-size: 1.8rem; }
+            h2 { font-size: 1.4rem; }
+            .btn {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="container nav-container">
+            <a href="/" class="logo">Mostbet Casino</a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/#login">Login</a></li>
+                <li><a href="/#bonus">Bono</a></li>
+                <li><a href="/#juegos">Juegos</a></li>
+                <li><a href="/#reseña">Reseña</a></li>
+                <li><a href="/contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="section">
+        <div class="container">
+            <div class="contact-content">
+                <h1>Contacto</h1>
+                
+                <div class="info-box">
+                    <p><strong>Información importante:</strong> Este sitio web (<span class="text-highlight">mostbet-casino.it.com</span>) es un portal informativo independiente. No estamos afiliados a Mostbet Casino ni a ningún operador de juegos. No aceptamos apuestas ni procesamos transacciones financieras.</p>
+                </div>
+                
+                <div class="warning-box">
+                    <p><strong>Para cuestiones relacionadas con cuentas de juego, transacciones o soporte técnico de Mostbet Casino</strong>, debes contactar directamente con el servicio de atención al cliente de Mostbet Casino a través de su sitio web oficial.</p>
+                </div>
+                
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <span class="contact-icon">📧</span>
+                        <h3>Email General</h3>
+                        <p><strong>support@mostbet-casino.it.com</strong></p>
+                        <p>Para consultas generales sobre nuestro portal informativo</p>
+                        <p style="margin-top: 15px;"><small>Respuesta en 24-48 horas</small></p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <span class="contact-icon">⚖️</span>
+                        <h3>Asuntos Legales</h3>
+                        <p><strong>legal@mostbet-casino.it.com</strong></p>
+                        <p>Para consultas sobre derechos de autor, privacidad o asuntos legales</p>
+                        <p style="margin-top: 15px;"><small>Respuesta en 2-3 días hábiles</small></p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <span class="contact-icon">🔄</span>
+                        <h3>Actualizaciones de Contenido</h3>
+                        <p><strong>contenido@mostbet-casino.it.com</strong></p>
+                        <p>Para sugerencias o correcciones sobre la información publicada</p>
+                        <p style="margin-top: 15px;"><small>Revisamos todas las sugerencias</small></p>
+                    </div>
+                </div>
+                
+                <h2>Formulario de Contacto</h2>
+                <p>Utiliza el siguiente formulario para enviarnos tus consultas, comentarios o sugerencias sobre nuestro portal informativo.</p>
+                
+                <div class="contact-form">
+                    <div id="formMessage" class="form-message"></div>
+                    
+                    <form id="contactForm" method="POST">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Nombre completo *</label>
+                            <input type="text" id="name" name="name" class="form-control" required placeholder="Tu nombre completo">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">Correo electrónico *</label>
+                            <input type="email" id="email" name="email" class="form-control" required placeholder="tu@email.com">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Asunto *</label>
+                            <select id="subject" name="subject" class="form-control" required>
+                                <option value="">Selecciona un asunto</option>
+                                <option value="consulta_general">Consulta general sobre el sitio</option>
+                                <option value="correccion_informacion">Corrección de información</option>
+                                <option value="sugerencia_contenido">Sugerencia de contenido</option>
+                                <option value="problema_tecnico">Problema técnico en el sitio</option>
+                                <option value="asunto_legal">Asunto legal</option>
+                                <option value="colaboracion">Propuesta de colaboración</option>
+                                <option value="otro">Otro asunto</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="form-label">Mensaje *</label>
+                            <textarea id="message" name="message" class="form-control" required placeholder="Escribe tu mensaje aquí..."></textarea>
+                        </div>
+                        
+                        <div class="form-check">
+                            <input type="checkbox" id="privacy" name="privacy" class="form-check-input" required>
+                            <label for="privacy" class="form-check-label">
+                                He leído y acepto la <a href="/politica-privacidad" target="_blank">Política de Privacidad</a> y comprendo que mis datos serán procesados de acuerdo con ella. *
+                            </label>
+                        </div>
+                        
+                        <div class="text-center">
+                            <button type="submit" class="btn">Enviar mensaje</button>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="faq-section">
+                    <h2>Preguntas Frecuentes sobre Contacto</h2>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">¿Puedo contactar para resolver problemas con mi cuenta de Mostbet Casino?</div>
+                        <div class="faq-answer">
+                            <p><strong>No.</strong> No estamos afiliados a Mostbet Casino y no tenemos acceso a cuentas de usuario ni podemos resolver problemas relacionados con depósitos, retiros o cuentas de juego. Debes contactar directamente con el soporte de Mostbet Casino a través de su sitio web oficial.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">¿Cuánto tardan en responder a mi consulta?</div>
+                        <div class="faq-answer">
+                            <p>Normalmente respondemos a todas las consultas legítimas dentro de <strong>24-48 horas</strong> en días hábiles. Las consultas legales pueden requerir un tiempo adicional de 2-3 días hábiles.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">¿Qué tipo de consultas puedo enviar a través del formulario?</div>
+                        <div class="faq-answer">
+                            <p>Puedes enviar:</p>
+                            <ul>
+                                <li>Consultas sobre la información publicada en nuestro sitio</li>
+                                <li>Sugerencias para mejorar nuestro contenido</li>
+                                <li>Correcciones de información que consideres incorrecta</li>
+                                <li>Problemas técnicos con nuestro sitio web</li>
+                                <li>Propuestas de colaboración (bajo evaluación)</li>
+                                <li>Consultas sobre nuestras políticas de privacidad o términos de uso</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">¿Guardan mis datos personales cuando contacto con ustedes?</div>
+                        <div class="faq-answer">
+                            <p>Sí, procesamos tus datos personales de acuerdo con nuestra <a href="/politica-privacidad" style="color: #F5B400;">Política de Privacidad</a>. Los datos se utilizan únicamente para responder a tu consulta y no se comparten con terceros sin tu consentimiento, salvo obligación legal.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">¿Puedo solicitar la eliminación de mis datos personales?</div>
+                        <div class="faq-answer">
+                            <p>Sí, puedes ejercer tus derechos de protección de datos, incluido el derecho al olvido, enviando una solicitud a <span class="text-highlight">legal@mostbet-casino.it.com</span>. Procesaremos tu solicitud de acuerdo con la legislación aplicable.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">¿Por qué no tienen un número de teléfono de contacto?</div>
+                        <div class="faq-answer">
+                            <p>Como portal informativo independiente con recursos limitados, priorizamos el contacto por email que nos permite gestionar las consultas de manera organizada y documentada. Esto nos ayuda a mantener la calidad y precisión en nuestras respuestas.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="info-box" style="margin-top: 40px;">
+                    <p><strong>Nota importante sobre respuesta automática:</strong> Todos los emails enviados a nuestras direcciones reciben una confirmación automática de recepción. Si no recibes esta confirmación en unos minutos, revisa tu carpeta de spam o intenta enviar nuevamente.</p>
+                </div>
+            </div>
+            
+            <div class="text-center" style="margin-top: 30px;">
+                <a href="/" class="btn">Volver al Inicio</a>
+                <a href="/juego-responsable" class="btn btn-secondary" style="margin-left: 15px;">Juego Responsable</a>
+            </div>
+            
+            <div class="text-center" style="margin-top: 20px;">
+                <p><small>Última actualización: 30 de enero de 2026</small></p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-links">
+                <div>
+                    <h4>Información Legal</h4>
+                    <ul>
+                        <li><a href="/politica-privacidad">Política de Privacidad</a></li>
+                        <li><a href="/terminos-condiciones">Términos y Condiciones</a></li>
+                        <li><a href="/juego-responsable">Juego Responsable</a></li>
+                        <li><a href="/descargo-responsabilidad">Descargo de Responsabilidad</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Guías de Casino</h4>
+                    <ul>
+                        <li><a href="/#login">Proceso de Login</a></li>
+                        <li><a href="/#bonus">Información de Bonos</a></li>
+                        <li><a href="/#juegos">Catálogo de Juegos</a></li>
+                        <li><a href="/#seguridad">Seguridad y Licencias</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Recursos</h4>
+                    <ul>
+                        <li><a href="/contacto">Contacto</a></li>
+                        <li><a href="/#faq">Preguntas Frecuentes</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Responsible Gaming Badges -->
+            <div class="footer-badges">
+                <img src="/images/footer-begambleaware.png" alt="Logo de Juego Responsable - BeGambleAware" class="footer-badge" width="120" height="50" loading="lazy">
+                <img src="/images/footer-gamban.png" alt="Software de bloqueo de juego Gamban" class="footer-badge" width="120" height="50" loading="lazy">
+                <img src="/images/footer-gamcare.png" alt="Asesoramiento sobre adicción al juego GamCare" class="footer-badge" width="120" height="50" loading="lazy">
+                <img src="/images/footer-betblocker.png" alt="Bloqueador de apuestas BetBlocker" class="footer-badge" width="120" height="50" loading="lazy">
+                <img src="/images/footer-18.png" alt="Solo para mayores de 18 años - Edad mínima para jugar" class="footer-badge" width="50" height="50" loading="lazy">
+            </div>
+
+            <p class="copyright">
+                © 2026 mostbet-casino.it.com – Portal informativo independiente sobre Mostbet Casino. No afiliado a Mostbet. Todas las marcas son propiedad de sus respectivos dueños. 18+ Juegue con responsabilidad.
+            </p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+            document.getElementById('navLinks').classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const nav = document.getElementById('navLinks');
+            const btn = document.getElementById('mobileMenuBtn');
+            if (!nav.contains(event.target) && !btn.contains(event.target) && nav.classList.contains('active')) {
+                nav.classList.remove('active');
+            }
+        });
+
+        // FAQ Toggle functionality
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const isOpen = answer.style.maxHeight;
+
+                // Close all others
+                document.querySelectorAll('.faq-answer').forEach(ans => {
+                    ans.style.maxHeight = null;
+                });
+                document.querySelectorAll('.faq-question').forEach(q => {
+                    q.style.color = '';
+                });
+
+                // Open clicked one if it was closed
+                if (!isOpen || isOpen === '0px') {
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                    question.style.color = '#F5B400';
+                }
+            });
+        });
+
+        // Contact Form Handling
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formMessage = document.getElementById('formMessage');
+            const formData = new FormData(this);
+            
+            // Basic validation
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value.trim();
+            const privacy = document.getElementById('privacy').checked;
+            
+            if (!name || !email || !subject || !message || !privacy) {
+                showFormMessage('Por favor, completa todos los campos obligatorios y acepta la política de privacidad.', 'error');
+                return;
+            }
+            
+            if (!isValidEmail(email)) {
+                showFormMessage('Por favor, introduce una dirección de email válida.', 'error');
+                return;
+            }
+            
+            // In a real implementation, you would send the data to a server here
+            // For this example, we'll simulate a successful submission
+            
+            // Show loading state
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalText = submitBtn.textContent;
+            submitBtn.textContent = 'Enviando...';
+            submitBtn.disabled = true;
+            
+            // Simulate API call delay
+            setTimeout(() => {
+                // Success simulation
+                showFormMessage('¡Gracias por tu mensaje! Hemos recibido tu consulta y te responderemos en 24-48 horas.', 'success');
+                
+                // Reset form
+                this.reset();
+                
+                // Restore button
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+                
+                // Scroll to message
+                formMessage.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                
+            }, 1500);
+        });
+
+        function showFormMessage(message, type) {
+            const formMessage = document.getElementById('formMessage');
+            formMessage.textContent = message;
+            formMessage.className = 'form-message';
+            
+            if (type === 'success') {
+                formMessage.classList.add('form-success');
+            } else if (type === 'error') {
+                formMessage.classList.add('form-error');
+            }
+            
+            formMessage.style.display = 'block';
+            
+            // Auto-hide after 10 seconds for success messages
+            if (type === 'success') {
+                setTimeout(() => {
+                    formMessage.style.display = 'none';
+                }, 10000);
+            }
+        }
+
+        function isValidEmail(email) {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+
+        // Email click functionality
+        document.querySelectorAll('.contact-card').forEach(card => {
+            const emailElement = card.querySelector('p strong');
+            if (emailElement && emailElement.textContent.includes('@')) {
+                emailElement.style.cursor = 'pointer';
+                emailElement.style.color = '#F5B400';
+                emailElement.addEventListener('click', function() {
+                    const email = this.textContent.trim();
+                    navigator.clipboard.writeText(email).then(() => {
+                        const originalText = this.textContent;
+                        this.textContent = '¡Copiado al portapapeles!';
+                        this.style.color = '#2ECC71';
+                        
+                        setTimeout(() => {
+                            this.textContent = originalText;
+                            this.style.color = '#F5B400';
+                        }, 2000);
+                    });
+                });
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href === '#') return;
+                
+                // Check if it's an internal anchor on the same page
+                if (href.startsWith('#') && document.querySelector(href)) {
+                    e.preventDefault();
+                    const targetElement = document.querySelector(href);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 100,
+                            behavior: 'smooth'
+                        });
+                        // Close mobile menu if open
+                        document.getElementById('navLinks').classList.remove('active');
+                    }
+                }
+                // For links to other pages with anchors, let the browser handle normally
+            });
+        });
+    </script>
+</body>
+</html>
